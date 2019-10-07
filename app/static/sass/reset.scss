@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* css 重置 */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,input,textarea,fieldset,legend,option,th,td,hr,button{
+	margin: 0;
+	padding: 0;
+}
+/* 默认文本全部字体大小为12px 微软雅黑 #8c8c8c颜色 */
+body,html{
+	font:14px "微软雅黑",Arial;
+	color:#333;
+}
+/* h1,h2,h3,h4,h5,h6,b,strong宽度正常,大小和主体一样 */
+h1,h2,h3,h4,h5,h6,b,strong{
+	font-weight:normal;
+	font-size:100%;	
+}
+/* 所有列表符号去除 */
+li{
+	list-style:none;	
+}
+/* 所有a标签没有下划线 */
+a,u,span,i{
+	text-decoration:none;	
+}
+a{
+	color: #fff;
+}
+a:hover{
+	color: #fff;
+	text-decoration:none;	
+}
+/* 清除input选中后蓝框 */
+input,textarea,select,area,button{
+	outline: none;
+}
+/* 清除边框 */
+input,button{
+	border: none;
+}
+.clearfix{
+	*zoom:1;/* 纯粹伪类解决IE6went */
+}
+.clearfix:after{
+	content: '0';
+	display:block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+/* 去除斜体样式 */
+i,em{
+	font-style: normal;
+}
+/* 去除图片下边白边和在IE浏览器自带边框的特点 */
+img{
+	border: none;
+	vertical-align: top;
+}
+.fl{float: left;}
+.fr{float: right;}
+/* 版心 */
+/* .container{
+	width: 1206px;
+	margin: 0 auto;
+} */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+	display: block;
+}
+/* -----------------------网页开始 -----------------*/

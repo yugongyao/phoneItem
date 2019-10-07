@@ -31,6 +31,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
     "gulp-webserver": "^0.9.1",
-    "gulp-zip": "^5.0.0"
+    "gulp-zip": "^5.0.0",
+    "mockjs": "^1.0.1-beta3"
   }
 }

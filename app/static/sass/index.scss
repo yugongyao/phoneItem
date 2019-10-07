@@ -1,0 +1,272 @@
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 16px;
+}
+
+html,
+body,
+.root {
+  width: 100%;
+  height: 100%;
+}
+
+.root {
+  position: relative;
+}
+
+// ==================头部样式===============
+.header {
+  width: 100%;
+  height: 88px;
+  background: #f87048;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .title {
+    width: 100%;
+    height: 88px;
+    text-align: center;
+    line-height: 88px;
+    font-size: 36px;
+    color: #fff;
+  }
+
+  .header-btn {
+    height: 88px;
+    line-height: 88px;
+    position: absolute;
+    top: 0;
+    padding: 0 10px;
+    font-size: 28px;
+    color: #fff;
+  }
+
+  .btn-left {
+    left: 10px;
+
+    span {
+      font-size: 28px;
+      margin-right: 10px;
+    }
+  }
+
+  .btn-right {
+    right: 10px;
+
+    span {
+      font-size: 28px;
+    }
+  }
+}
+
+// ===================尾部样式=============
+.tabs {
+  width: 100%;
+  height: 98px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  border-top: 1px solid #aaa;
+
+  .tab-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    span:nth-of-type(1) {
+      text-align: center;
+      font-size: 56px;
+      color: #6f6f6f;
+    }
+
+    span:nth-of-type(2) {
+      text-align: center;
+      font-size: 24px;
+      color: #b2b2b2;
+      line-height: 24px;
+    }
+  }
+
+  .tab-hover {
+    span {
+      color: #967dfd !important;
+    }
+  }
+}
+
+// 主体内容样式
+.content {
+  width: 100%;
+  position: absolute;
+  top: 88px;
+  left: 0;
+  bottom: 98px;
+  overflow: auto;
+  background: #f0eff4;
+
+  // -----轮播图----
+  .swiper-container {
+    width: 100%;
+    height: 6.04rem;
+
+    .swiper-wrapper {
+      .swiper-slide {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  //-------信息------
+  .message {
+    height: 1.32rem;
+    width: 100%;
+    position: relative;
+    margin-bottom: 0.36rem;
+    background: #fff;
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0.48rem;
+      line-height: 1.32rem;
+      font-size: 1.02rem;
+    }
+
+    p {
+      position: absolute;
+      line-height: 1.32rem;
+      top: 0;
+      right: 0.48rem;
+      font-size: 0.34rem;
+      color: #db4745;
+    }
+
+    h4 {
+      text-align: center;
+      line-height: 1.32rem;
+      font-size: 0.34rem;
+      color: #878787;
+    }
+  }
+
+  //-------导航栏----------
+  .nav {
+    height: 2.83rem;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    margin-bottom: 0.5rem;
+
+    .nav-item {
+      flex: 1;
+
+      span:nth-of-type(1) {
+        display: block;
+        height: 0.94rem;
+        width: 100%;
+        margin-top: 0.5rem;
+
+        a {
+          display: block;
+          height: 0.94rem;
+          width: 100%;
+          text-align: center;
+
+          img {
+            width: 1.26rem;
+            height: 0.94rem;
+          }
+        }
+      }
+
+      span:nth-of-type(2) {
+        display: block;
+        text-align: center;
+        line-height: 1.25rem;
+        font-size: 0.34rem;
+        color: #888888;
+      }
+    }
+  }
+
+  //--------任务列表-------
+  .new-task {
+    width: 100%;
+    .task-header {
+      padding: 0 0.62rem;
+      height: 1.32rem;
+      background: #fff;
+
+      p {
+        line-height: 1.32rem;
+        font-size: 0.40rem;
+        border-bottom: solid 3px #ededed;
+
+        span {
+          font-size: 0.46rem;
+          color: #7d7dd7;
+          margin-right: 0.38rem;
+        }
+      }
+    }
+
+    .list {
+      .item:nth-last-of-type(1){
+        margin-bottom: 0;
+      }
+      .item {
+        background: #fff;
+        padding: 0.60rem 0.45rem;
+        display: flex;
+        position: relative;
+        margin-bottom: 0.35rem;
+
+        .left {
+          width: 1.5rem;
+          height: 1.5rem;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .center {
+          flex: 1;
+          margin-left: 0.38rem;
+          margin-right: 0.38rem;
+          p:nth-of-type(1){
+            font-size: 0.4rem;
+            line-height: 0.64rem;
+            color: #343434;
+            margin-bottom: 0.4rem;
+          }
+          p:nth-of-type(2){
+            font-size: 0.3rem;
+            line-height: 0.46rem;
+            color: #bdbdbd;
+          }
+        }
+
+        .right {
+          p {
+            font-size: 0.4rem;
+            line-height: 0.64rem;
+            color: #d55b5a;
+          }
+        }
+      }
+    }
+  }
+
+}
