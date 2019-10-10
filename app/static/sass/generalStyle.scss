@@ -1,0 +1,114 @@
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 16px;
+}
+
+html,
+body,
+.root {
+  width: 100%;
+  height: 100%;
+}
+
+.root {
+  position: relative;
+}
+
+// ==================头部样式===============
+.header {
+  width: 100%;
+  height: 88px;
+  background: #f87048;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .title {
+    width: 100%;
+    height: 88px;
+    text-align: center;
+    line-height: 88px;
+    font-size: 36px;
+    color: #fff;
+  }
+
+  .header-btn {
+    height: 88px;
+    line-height: 88px;
+    position: absolute;
+    top: 0;
+    padding: 0 10px;
+    font-size: 28px;
+    color: #fff;
+  }
+
+  .btn-left {
+    left: 10px;
+
+    span {
+      font-size: 28px;
+      margin-right: 10px;
+    }
+  }
+
+  .btn-right {
+    right: 10px;
+
+    span {
+      font-size: 28px;
+    }
+  }
+}
+
+// ===================尾部样式=============
+.tabs {
+  width: 100%;
+  height: 98px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  border-top: 1px solid #aaa;
+
+  .tab-item {
+    flex: 1;
+    a{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      span:nth-of-type(1) {
+        text-align: center;
+        font-size: 56px;
+        color: #6f6f6f;
+      }
+  
+      span:nth-of-type(2) {
+        text-align: center;
+        font-size: 24px;
+        color: #b2b2b2;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .tab-hover {
+    span {
+      color: #967dfd !important;
+    }
+  }
+}
+
+//=================主体内容=============
+.content {
+  width: 100%;
+  position: absolute;
+  top: 88px;
+  left: 0;
+  bottom: 98px;
+  overflow: auto;
+  background: #f0eff4;
+}

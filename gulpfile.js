@@ -143,7 +143,7 @@ gulp.task('build', function(){
 gulp.task('webserver', function() {
   gulp.src('./')//该文件夹是服务器的根路径
     .pipe(webserver({
-      host:'192.168.0.103',//设置我的ip地址
+      host:'10.20.152.4',//设置我的ip地址
       port:'9600',//端口号
       livereload: true,//热更新,自动刷新浏览器
       directoryListing: true,//是否展示文件夹列表

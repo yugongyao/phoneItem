@@ -1,0 +1,140 @@
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 16px;
+}
+
+html,
+body,
+.root {
+  width: 100%;
+  height: 100%;
+}
+
+.root {
+  position: relative;
+}
+
+//========头部样式========
+.header {
+  width: 100%;
+  height: 88px;
+  background: #7575f9;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .title {
+    width: 100%;
+    height: 88px;
+    text-align: center;
+    line-height: 88px;
+    font-size: 36px;
+    color: #fff;
+  }
+
+  .header-btn {
+    height: 88px;
+    line-height: 88px;
+    position: absolute;
+    top: 0;
+    padding: 0 10px;
+    font-size: 28px;
+    color: #fff;
+  }
+
+  .btn-left {
+    left: 10px;
+
+    span {
+      font-size: 28px;
+      margin-right: 10px;
+    }
+  }
+}
+
+//========内容样式========
+.set-content {
+  width: 100%;
+  position: absolute;
+  top: 88px;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
+  background: #f1f0f6;
+
+  .set-mess {
+
+    background: #fff;
+    padding-left: 0.46rem;
+    margin-bottom: 0.36rem;
+
+    .aboutUs{
+      a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-bottom:solid 1px #dedede; 
+        p:nth-of-type(1){
+          line-height: 1.49rem;
+          float: left;
+          color: #343434;
+          font-size: 0.40rem;
+        }
+        p:nth-of-type(2){
+          line-height: 1.49rem;
+          float: right;
+          margin-right: 0.46rem;
+          span{
+            color: #c9c8cd;
+            font-size: 0.36rem;
+          }
+        }
+      }
+    }
+    .version{
+      a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-bottom:solid 1px #dedede; 
+        p:nth-of-type(1){
+          line-height: 1.49rem;
+          float: left;
+          color: #343434;
+          font-size: 0.40rem;
+        }
+        p:nth-of-type(2){
+          line-height: 1.49rem;
+          float: right;
+          margin-right: 0.46rem;
+          color: #7575f9;
+          font-size: 0.40rem;
+          span{
+            margin-left: 0.10rem;
+            color: #c9c8cd;
+            font-size: 0.36rem;
+          }
+        }
+      }
+    }
+  }
+
+  // 退出登录
+  .log-out{
+    width: 100%;
+    height: 1.40rem;
+    background: #fff;
+
+    a{
+      display: block;
+      line-height: 1.40rem;
+      text-align: center;
+      color: #646464;
+      font-size:0.38rem;
+    }
+  }
+
+}

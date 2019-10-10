@@ -33,7 +33,8 @@ let map = {
           picUrl: '@image(150x150, @color)',
           data:Mock.Random.date(),
           'num|100-999': 0,
-          mess:Mock.Random.cword(5, 7)
+          cword:Mock.Random.cword(5, 7),
+          mess:'@cword@num'
         }
       ] 
     });

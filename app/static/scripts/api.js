@@ -1,5 +1,5 @@
 
-  var host='http://192.168.0.103:9600';
+  var host='http://10.20.152.4:9600';
 
   var homeBannerApi=host+'/api/banner/lists';
 

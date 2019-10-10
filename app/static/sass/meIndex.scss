@@ -1,0 +1,177 @@
+.header {
+  background: #7575f9;
+}
+
+//主体内容
+.content {
+  background: #fff;
+
+  //内容头部
+  .content-user {
+    height: 2.20rem;
+    width: 100%;
+    background: #7575f9;
+
+    .user-inner {
+      height: 1.04rem;
+      max-width: 100%;
+      padding: 0.2rem 0.92rem 0;
+
+      .user {
+        float: left;
+
+        h2 {
+          line-height: 0.68rem;
+          font-size: 0.38rem;
+          color: #fff;
+        }
+
+        p {
+          line-height: 0.36rem;
+          font-size: 0.24rem;
+        }
+      }
+
+      .via {
+        height: 1.04rem;
+        width: 1.04rem;
+        border-radius: 50%;
+        background: #fff;
+        float: right;
+      }
+    }
+  }
+
+  //内容头部2
+  .content-money {
+    height: 2.45rem;
+    width: 100%;
+    background: #7575f9;
+
+    .money-inner {
+      height: 1.70rem;
+      max-width: 100%;
+      padding: 0.38rem 0;
+      position: relative;
+
+      .wallet {
+        width: 49%;
+        height: 100%;
+        float: left;
+      }
+
+      .coins {
+        width: 49%;
+        height: 100%;
+        float: right;
+      }
+
+      .wall-coin {
+        h2 {
+          height: 0.56rem;
+          line-height: 0.56rem;
+          font-size: 0.36rem;
+          color: #fff;
+          text-align: center;
+          position: relative;
+
+          span {
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            margin-left: 38%;
+            width: 0.2rem;
+            height: 0.2rem;
+            border-radius: 50%;
+            background: #7fcce8;
+          }
+        }
+
+        p {
+          height: 1rem;
+          line-height: 1rem;
+          text-align: center;
+          color: #fff;
+          font-size: 0.80rem;
+        }
+      }
+
+      .money-line {
+        position: absolute;
+        top: 0.38rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 1.70rem;
+        width: 0;
+        border-left: solid #9496ff 2px;
+        border-right: solid #9496ff 2px;
+      }
+    }
+  }
+
+  //内容列表
+  .content-list {
+    .list-header {
+      height: 1.20rem;
+      background: #7575f9;
+
+      &-inner {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        border-radius: 0 1.20rem 0 0;
+      }
+    }
+
+    .effect-list {
+      padding-left: 0.46rem;
+
+      .effect-item {
+        // height: 1.6rem;
+        border-bottom:solid 1px #dcdcdc;
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+
+          p:nth-of-type(1) {
+            line-height: 1.6rem;
+            float: left;
+            margin-right: 0.3rem;
+
+            span {
+              color: #7e77e1;
+              font-size: 0.58rem;
+            }
+          }
+
+          p:nth-of-type(2) {
+            line-height: 1.6rem;
+            float: left;
+            color: #333;
+            font-size: 0.4rem;
+          }
+
+          p:nth-of-type(3) {
+            line-height: 1.6rem;
+            float: right;
+
+            span {
+              color: #c6c5cb;
+              font-size: 0.40rem;
+              margin-right: 0.46rem;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}
